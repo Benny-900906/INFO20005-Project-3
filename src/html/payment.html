@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/styles/shopping-cart.css">
+  <link rel="stylesheet" href="/src/styles/payment.css">
   <link rel="icon" href="/res/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/964b9be802.js" crossorigin="anonymous"></script>
 </head>  
@@ -39,108 +39,30 @@
     </nav>
   </header>
   <main>
-    <div class="order-panel">
-      <div class="order-summary">
-        <div class="order-summary__header">
-          <h2>PRODUCT</h2>
-          <h2>PRICE</h2>
-          <h2>QUANTITY</h2>
-          <h2>TOTAL</h2>
+    <section class="payment">
+      <h2>Payment Details:</h2>
+      <form action="checkout.html" method="POST">
+        <div class="payment__card-number">
+          <label for="card-number">Card Number *</label>
+          <input type="text" id="card-number" name="card-number" autocomplete="nope" placeholder="0000 0000 0000 0000">
         </div>
-        <hr>
-        <div class="order-summary__product">
-          <div class="product__detail">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 50px">
-            <span>Before the earth</span>
+        <div class="payment__card-holder">
+          <label for="card-holder">Card Holder Name *</label>
+          <input type="text" id="care-holder" name="card-holder" autocomplete="nope">
+        </div>
+        <div class="payment__card-meta">
+          <div class="card-meta__expiry">
+            <label for="card-expiry">Valid Thru *</label>
+            <input type="text" id="card-expiry" name="card-expiry" autocomplete="nope" placeholder="MM/YY">
           </div>
-          <div class="product__price">
-            <span>$12.99</span>
-          </div>
-          <div class="product__quantity">
-            <div class="quantity__control">
-              <button class="quantity__decrement-btn">-</button>
-              <span class="quantity__amount">1</span>
-              <button class="quantity__increment-btn">+</button>
-            </div>
-            <a class="quantity__reset" href="">remove</a>
-          </div>
-          <div class="product__total">
-            <span>$12.99</span>
+          <div class="card-meta__security-code">
+            <label for="security-code">CVV Code *</label>
+            <input type="text" id="security-code" name="security-code" autocomplete="nope" placeholder="000">
           </div>
         </div>
-        <div class="order-summary__product">
-          <div class="product__detail">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 50px">
-            <span>Before the earth</span>
-          </div>
-          <div class="product__price">
-            <span>$12.99</span>
-          </div>
-          <div class="product__quantity">
-            <div class="quantity__control">
-              <button class="quantity__decrement-btn">-</button>
-              <span class="quantity__amount">1</span>
-              <button class="quantity__increment-btn">+</button>
-            </div>
-            <a class="quantity__reset" href="">remove</a>
-          </div>
-          <div class="product__total">
-            <span>$12.99</span>
-          </div>
-        </div>
-      </div>
-      <button class="order-summary__save-btn" type="button">SAVE</button>
-    </div>
-    <div class="order-requirement">
-      <h3 class="order-requirement__msg">Message</h3>
-      <textarea class="order-requirement__textarea" placeholder="Message or any special requirement(s)." rows="4" cols="5"></textarea>
-    </div>
-    <div class="order-finale">
-      <h2 class="order-finale__total">CART TOTALS:</h2>
-      <div class="order-finale__subtotal">
-        <h3>Sub total:</h3>
-        <h3 class="subtotal__price">$41.98</h3>
-      </div>
-    </div>
-    <div class="order-proceed">
-      <button class="order-proceed__continue-btn" type="button">CONTINUE SHOPPING</button>
-      <button class="order-proceed__checkout-btn" type="button">CHECKOUT</button>
-    </div>
-    <div class="order-recommendation">
-      <h2>Recommended products:</h2>
-      <ul class="order-recommendation__product-list">
-        <li>
-          <div class="product-list__item">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 40px">
-            <div class="item__meta">
-              <h3>Catastrophers</h3>
-              <span>$12.00</span>
-            </div>
-          </div>
-          <button class="product-list__add-btn">ADD TO CART</button>
-        </li>
-        <li>
-          <div class="product-list__item">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 40px">
-            <div class="item__meta">
-              <h3>Catastrophers</h3>
-              <span>$12.00</span>
-            </div>
-          </div>
-          <button class="product-list__add-btn">ADD TO CART</button>
-        </li>
-        <li>
-          <div class="product-list__item">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 40px">
-            <div class="item__meta">
-              <h3>Catastrophers</h3>
-              <span>$12.00</span>
-            </div>
-          </div>
-          <button class="product-list__add-btn">ADD TO CART</button>
-        </li>
-      </ul>
-    </div>
+        <button type="submit" class="payment__submit-btn">PROCEED & PLACE ORDER</button>
+      </form>
+    </section>
   </main>
   <footer>
     <div class="subscription">
@@ -201,5 +123,7 @@
   <!-- scripts -->
   <script src="/src/scripts/header.js" defer></script>
   <script src="/src/scripts/footer.js" defer></script>
+  <script src="/src/scripts/product-preview.js" defer></script>
+  <script src="/src/scripts/payment-validation.js"></script>
 </body>
 </html>

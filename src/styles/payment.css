@@ -1,0 +1,77 @@
+@import url(root.css);
+ 
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-family: var(--content-font-family);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 1.5rem;
+}
+
+main h2, main legend {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+main label, main span, main button, main a, main select, main input {
+  font-size: 0.6rem;
+}
+
+main input, main select {
+  padding: 0.2rem;
+}
+
+.payment {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.payment h2 {
+  align-self: flex-start;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  gap: 1.5rem;
+}
+
+form input {
+  line-height: 1.8;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.payment__card-number, .payment__card-holder, .card-meta__expiry, .card-meta__security-code {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__card-meta {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-meta__expiry, .card-meta__security-code {
+  width: 48%;
+}
+
+.payment__submit-btn {
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--text-ter-clr);
+  background-color: darkgreen;/* change later */
+  border-radius: 0.5rem;
+}

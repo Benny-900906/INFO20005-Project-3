@@ -1,0 +1,63 @@
+@import url(root.css);
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-family: var(--content-font-family);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  margin-block: 4.5rem;
+}
+
+main h2, main legend {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+main label, main span, main button, main a, main select, main input {
+  font-size: 0.6rem;
+}
+
+main input, main select {
+  padding: 0.2rem;
+}
+
+.order-placed-description, .post-order-alternatives {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-placed-description {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.order-placed-description img {
+  width: 50%;
+  aspect-ratio: 1;
+}
+
+.post-order-alternatives button {
+  width: 40%;
+  text-align: center;
+  padding: 0.7rem 0.4rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.continue-shop-btn {
+  background-color: var(--bg-qua-clr);
+}
+
+.order-detail-btn {
+  background-color: var(--bg-qui-clr);
+  color: var(--text-ter-clr);
+}

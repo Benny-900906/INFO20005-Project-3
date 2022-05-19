@@ -9,22 +9,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/styles/shopping-cart.css">
+  <link rel="stylesheet" href="/src/styles/checkout.css">
   <link rel="icon" href="/res/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/964b9be802.js" crossorigin="anonymous"></script>
-
-
 </head>  
 
 <body>
-
   <header>
     <div class="header-section">
       <div class="header-section__logo">
         <img class="logo__img" src="/res/apple-touch-icon.png" alt="spelshop character as an icon">
         <h1 class="logo__title">Spelshop</h1>
       </div>
-  
       <div class="header-section__tools">
         <ul class="tools__functions">
           <li class="functions__search">
@@ -39,17 +35,146 @@
         </ul>
       </div>
     </div>
-
     <nav class="nav-bar" data-expand="false">
       <div class="nav-bar__btn"></div>
     </nav>
   </header>
-
-
   <main>
-    
+    <section class="billing-info">
+      <h2>Billing Details:</h2>
+      <form class="user-information" action="" method="POST">
+        <div class="user-name">
+          <div class="user-name__first">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first-name">
+          </div>
+          <div class="user-name__last">
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last-name">
+          </div>
+        </div>
+        <div class="user-company">
+          <label for="company-name">Company Name</label>
+          <input type="text" id="company-name" name="company-name">
+        </div>
+        <div class="user-phone">
+          <label for="phone-number">Phone</label>
+          <label for="phone-region"></label>
+          <div class="user-phone__detail">
+            <fieldset class="phone-region__fieldset">
+              <select name="phone-region" id="phone-region" class="phone-region-select">
+                <option value="usa">+123</option>
+              </select>
+            </fieldset>
+            <input type="text" id="phone-number" class="phone-number-input" name="phone-number">
+          </div>
+        </div>
+        <div class="user-email">
+          <label for="email">Email *</label>
+          <input type="text" id="email" name="email">
+        </div>
+        <div class="user-country-state">  
+          <div class="user-country__detail">
+            <label for="country">Country *</label>
+            <select name="country" id="country">
+              <option value="" disabled selected>Choose</option>
+              <option value="usa">United State</option>
+            </select>
+          </div>
+          <div class="user-state__detail">
+            <label for="state">State *</label>
+            <select name="state" id="state">
+              <option value="" disabled selected>Choose</option>
+              <option value="ca">CA</option>  
+            </select>
+          </div>
+        </div>
+        <div class="user-city-surburb">
+          <div class="user-city__detail">
+            <label for="city">City/Town *</label>
+            <select name="city" id="city">
+              <option value="" disabled selected>Choose</option>
+              <option value="ir">Irvine</option>
+            </select>
+          </div>
+          <div class="user-surburb__detail">
+            <label for="surburb">Surburb *</label>
+            <select name="surburb" id="surburb">
+              <option value="" disabled selected>Choose</option>
+              <option value="la palma">La Palma</option>
+            </select>
+          </div>
+        </div>
+        <div class="user-street">
+          <div class="user-street__name">
+            <label for="street-name">Street Name</label>
+            <input type="text" id="street-name">
+          </div>
+          <div class="user-street__num">
+            <label for="street-num">Street Number</label>
+            <input type="text" id="street-num">
+          </div>
+        </div>
+        <div class="user-department">
+          <label for="department">Department Name, Department Floor</label>
+          <input type="text" id="department">
+        </div>
+      </form>
+    </section>
+    <section class="shipping-info">
+      <form action="" class="shipping-form">
+        <fieldset class="shipping-fieldset">
+          <legend>Shipping Details:</legend>
+          <div class="shipping-info__free">
+            <input type="radio" id="free-shipping" name="shipping-method" checked>
+            <div class="shipping-description">
+              <label for="free-shipping">Free Shipping</label>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perspiciatis.</p>
+            </div>
+          </div>
+          <div class="shipping-info__express">
+            <input type="radio" id="express-shipping" name="shipping-method">
+            <div class="shipping-description">
+              <label for="express-shipping">Express + $80.99</label>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perspiciatis.</p>
+            </div>
+          </div>
+        </fieldset>
+        <div class="shipping-alternative">
+          <input type="checkbox" id="different-shipping" name="different-shipping">
+          <label for="different-shipping">Shipping to another address</label>
+        </div>
+      </form>
+    </section>
+    <section class="order-review">
+      <h2>Order Overview:</h2>
+      <div class="order-review__detail">
+        <div class="detail__title">
+          <h3>Product</h3>
+          <h3>Price</h3>
+        </div>
+        <div class="detail__info">
+          <span>Product Name</span>
+          <span>$12.99</span>
+        </div>
+        <div class="detail__info">
+          <span>Product Name</span>
+          <span>$12.99</span>
+        </div>
+      </div>
+      <div class="order-review__wrapup">
+        <div class="wrapup__coupon">
+          <label for="coupon">Coupon</label>
+          <input class="coupon-input" type="text" id="coupon" name="couple">
+        </div>
+        <div class="wrapup__total-price">
+          <h3>TOTAL</h3>
+          <span>$25.98</span>
+        </div>
+      </div>
+    </section>
+    <button href="#" class="proceed-payment-btn" type="button">PAYMENT</button>
   </main>
-
   <footer>
     <div class="subscription">
       <p>Subscribe to get our latest news and special offers !!!</p>
@@ -58,7 +183,6 @@
         <button type="button" class="content__btn">Subscribe</button>
       </div>
     </div>
-
     <div class="short-cut">
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
@@ -72,7 +196,6 @@
           <li><a href="" class="drop-down-links__option">Role-playing games</a></li>
           <li><a href="" class="drop-down-links__option">Editor's choice</a></li>
         </ul>
-        
       </div>
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
@@ -84,7 +207,6 @@
           <li><a href="" class="drop-down-links__option">Orders</a></li>
         </ul>
       </div>
-
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>ABOUT US</h2>
@@ -97,7 +219,6 @@
           <li><a href="" class="drop-down-links__option">Customer care</a></li>
         </ul>
       </div>
-
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>HELP CENTER</h2>

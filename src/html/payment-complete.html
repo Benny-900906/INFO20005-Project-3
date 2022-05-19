@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/styles/shopping-cart.css">
+  <link rel="stylesheet" href="/src/styles/payment-complete.css">
   <link rel="icon" href="/res/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/964b9be802.js" crossorigin="anonymous"></script>
 </head>  
@@ -28,6 +28,7 @@
           </li>
           <li class="functions__user">
             <a href="#" class="user__icon"><i class="fa far fa-user"></i></a></li>
+    
           <li class="functions__shopping-cart">
             <a href="#" class="cart__icon cart-occupied"><i class="fa fa-shopping-cart"></i></a>
           </li>
@@ -39,107 +40,14 @@
     </nav>
   </header>
   <main>
-    <div class="order-panel">
-      <div class="order-summary">
-        <div class="order-summary__header">
-          <h2>PRODUCT</h2>
-          <h2>PRICE</h2>
-          <h2>QUANTITY</h2>
-          <h2>TOTAL</h2>
-        </div>
-        <hr>
-        <div class="order-summary__product">
-          <div class="product__detail">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 50px">
-            <span>Before the earth</span>
-          </div>
-          <div class="product__price">
-            <span>$12.99</span>
-          </div>
-          <div class="product__quantity">
-            <div class="quantity__control">
-              <button class="quantity__decrement-btn">-</button>
-              <span class="quantity__amount">1</span>
-              <button class="quantity__increment-btn">+</button>
-            </div>
-            <a class="quantity__reset" href="">remove</a>
-          </div>
-          <div class="product__total">
-            <span>$12.99</span>
-          </div>
-        </div>
-        <div class="order-summary__product">
-          <div class="product__detail">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 50px">
-            <span>Before the earth</span>
-          </div>
-          <div class="product__price">
-            <span>$12.99</span>
-          </div>
-          <div class="product__quantity">
-            <div class="quantity__control">
-              <button class="quantity__decrement-btn">-</button>
-              <span class="quantity__amount">1</span>
-              <button class="quantity__increment-btn">+</button>
-            </div>
-            <a class="quantity__reset" href="">remove</a>
-          </div>
-          <div class="product__total">
-            <span>$12.99</span>
-          </div>
-        </div>
-      </div>
-      <button class="order-summary__save-btn" type="button">SAVE</button>
+    <div class="order-placed-description">
+      <img src="/res/complete-31.svg" alt="">
+      <h2>Thank you for purchasing at Spelshop!</h2>
+      <h2>We are preparing your order!</h2>
     </div>
-    <div class="order-requirement">
-      <h3 class="order-requirement__msg">Message</h3>
-      <textarea class="order-requirement__textarea" placeholder="Message or any special requirement(s)." rows="4" cols="5"></textarea>
-    </div>
-    <div class="order-finale">
-      <h2 class="order-finale__total">CART TOTALS:</h2>
-      <div class="order-finale__subtotal">
-        <h3>Sub total:</h3>
-        <h3 class="subtotal__price">$41.98</h3>
-      </div>
-    </div>
-    <div class="order-proceed">
-      <button class="order-proceed__continue-btn" type="button">CONTINUE SHOPPING</button>
-      <button class="order-proceed__checkout-btn" type="button">CHECKOUT</button>
-    </div>
-    <div class="order-recommendation">
-      <h2>Recommended products:</h2>
-      <ul class="order-recommendation__product-list">
-        <li>
-          <div class="product-list__item">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 40px">
-            <div class="item__meta">
-              <h3>Catastrophers</h3>
-              <span>$12.00</span>
-            </div>
-          </div>
-          <button class="product-list__add-btn">ADD TO CART</button>
-        </li>
-        <li>
-          <div class="product-list__item">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 40px">
-            <div class="item__meta">
-              <h3>Catastrophers</h3>
-              <span>$12.00</span>
-            </div>
-          </div>
-          <button class="product-list__add-btn">ADD TO CART</button>
-        </li>
-        <li>
-          <div class="product-list__item">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 40px">
-            <div class="item__meta">
-              <h3>Catastrophers</h3>
-              <span>$12.00</span>
-            </div>
-          </div>
-          <button class="product-list__add-btn">ADD TO CART</button>
-        </li>
-      </ul>
+    <div class="post-order-alternatives">
+      <button class="continue-shop-btn" type="button">CONTINUE SHOPPING</button>
+      <button class="order-detail-btn" type="button">VIEW ORDER DETAIL</button>
     </div>
   </main>
   <footer>
@@ -162,7 +70,7 @@
           <li><a href="" class="drop-down-links__option">Card games</a></li>
           <li><a href="" class="drop-down-links__option">Role-playing games</a></li>
           <li><a href="" class="drop-down-links__option">Editor's choice</a></li>
-        </ul>
+        </ul> 
       </div>
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
