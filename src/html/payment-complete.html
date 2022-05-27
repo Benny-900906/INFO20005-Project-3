@@ -13,41 +13,95 @@
   <link rel="icon" href="/res/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/964b9be802.js" crossorigin="anonymous"></script>
 </head>  
-
 <body>
   <header>
     <div class="header-section">
       <div class="header-section__logo">
-        <img class="logo__img" src="/res/apple-touch-icon.png" alt="spelshop character as an icon">
+        <img class="logo__img" src="/res/apple-touch-icon.png" alt="iconic spelshop character">
         <h1 class="logo__title">Spelshop</h1>
+      </div>
+      <div class="header-section__search">
+        <input class="search__input" type="text" placeholder="Search ...">
+        <span class="search__icon"><i class="fa fa-search"></i></span>
       </div>
       <div class="header-section__tools">
         <ul class="tools__functions">
-          <li class="functions__search">
-            <a href="#" class="search__icon"><i class="fa fa-search"></i></a>
+          <li class="functions__search" arial-label="Search Icon">
+            <a href="" class="search__icon"><i class="fa fa-search"></i></a>
           </li>
-          <li class="functions__user">
-            <a href="#" class="user__icon"><i class="fa far fa-user"></i></a></li>
-    
-          <li class="functions__shopping-cart">
-            <a href="#" class="cart__icon cart-occupied"><i class="fa fa-shopping-cart"></i></a>
+          <li class="functions__user" arial-label="User Icon">
+            <a href="" class="user__icon"><i class="fa far fa-user"></i></a>
+          </li>
+          <li class="functions__shopping-cart" arial-label="Shopping Cart Icon">
+            <a href="" class="cart__icon"><i class="fa fa-shopping-cart"></i></a>
           </li>
         </ul>
       </div>
     </div>
-    <nav class="nav-bar" data-expand="false">
-      <div class="nav-bar__btn"></div>
+    <nav class="nav-bar">
+      <div class="nav-bar__outter-btn">
+        <div class="nav-bar__inner-btn"></div>
+      </div>
+      <div class="nav-bar__cover"></div>
+      <div class="nav-bar__sub-nav">
+        <div class="sub-nav__menu">
+          <h2>MENU</h2>
+          <div class="exit-menu-outter-btn">
+            <div class="exit-menu-inner-btn"></div>
+          </div>
+        </div>
+        <div class="sub-nav__item drop-down-game">
+          <span class="sub-nav__item-name"><span>Games</span><i class="fas fa-angle-down drop-down-toggle__indicator"></i></span>
+          <ul class="sub-nav__item-list">
+            <li><a href="/src/html/product-listing.html">View All Games</a></li>
+            <li><a href="">Board Games</a></li>
+            <li><a href="">Card Games</a></li>
+            <li><a href="">Dice Games</a></li>
+            <li><a href="">Role Playing Games</a></li>
+            <li><a href="">Editor's Choice</a></li>
+          </ul>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Puzzles</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Trending</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Best Sellers</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">New Arrivals</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Accessories</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Account</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">About us</span></a>
+        </div>
+        <div class="sub-nav__item drop-down-help">
+          <span class="sub-nav__item-name"><span>Help</span><i class="fas fa-angle-down drop-down-toggle__indicator"></i></span>
+          <ul class="sub-nav__item-list">
+            <li><a href="">Contact us</a></li>
+            <li><a href="">F&Q</a></li>
+            <li><a href="">Terms and conditions</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
     <div class="order-placed-description">
-      <img src="/res/complete-31.svg" alt="">
+      <img src="/res/complete-31.svg" alt="payment complete indicator">
       <h2>Thank you for purchasing at Spelshop!</h2>
       <h2>We are preparing your order!</h2>
     </div>
     <div class="post-order-alternatives">
-      <button class="continue-shop-btn" type="button">CONTINUE SHOPPING</button>
-      <button class="order-detail-btn" type="button">VIEW ORDER DETAIL</button>
+      <a href="index.html" role="button" class="continue-shop-btn" type="button">CONTINUE SHOPPING</a>
+      <a href="" role="button" class="order-detail-btn" type="button">VIEW ORDER DETAIL</a>
     </div>
   </main>
   <footer>
@@ -62,7 +116,7 @@
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>PRODUCTS</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Board games</a></li>
@@ -70,12 +124,12 @@
           <li><a href="" class="drop-down-links__option">Card games</a></li>
           <li><a href="" class="drop-down-links__option">Role-playing games</a></li>
           <li><a href="" class="drop-down-links__option">Editor's choice</a></li>
-        </ul> 
+        </ul>
       </div>
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>ACCOUNT</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Personal info</a></li>
@@ -85,7 +139,7 @@
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>ABOUT US</h2>
-          <span><i class="fas fa-angle-down"></i></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Contacts</a></li>
@@ -96,8 +150,8 @@
       </div>
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
-          <h2>HELP CENTER</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <h2>HELP</h2>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">F&Q</a></li>
@@ -109,5 +163,6 @@
   <!-- scripts -->
   <script src="/src/scripts/header.js" defer></script>
   <script src="/src/scripts/footer.js" defer></script>
+  <script src="/src/scripts/nav-bar-toggle.js" defer></script>
 </body>
 </html>

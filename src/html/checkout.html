@@ -13,30 +13,84 @@
   <link rel="icon" href="/res/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/964b9be802.js" crossorigin="anonymous"></script>
 </head>  
-
 <body>
   <header>
     <div class="header-section">
       <div class="header-section__logo">
-        <img class="logo__img" src="/res/apple-touch-icon.png" alt="spelshop character as an icon">
+        <img class="logo__img" src="/res/apple-touch-icon.png" alt="iconic spelshop character">
         <h1 class="logo__title">Spelshop</h1>
+      </div>
+      <div class="header-section__search">
+        <input class="search__input" type="text" placeholder="Search ...">
+        <span class="search__icon"><i class="fa fa-search"></i></span>
       </div>
       <div class="header-section__tools">
         <ul class="tools__functions">
-          <li class="functions__search">
-            <a href="#" class="search__icon"><i class="fa fa-search"></i></a>
+          <li class="functions__search" arial-label="Search Icon">
+            <a href="" class="search__icon"><i class="fa fa-search"></i></a>
           </li>
-          <li class="functions__user">
-            <a href="#" class="user__icon"><i class="fa far fa-user"></i></a></li>
-    
-          <li class="functions__shopping-cart">
-            <a href="#" class="cart__icon cart-occupied"><i class="fa fa-shopping-cart"></i></a>
+          <li class="functions__user" arial-label="User Icon">
+            <a href="" class="user__icon"><i class="fa far fa-user"></i></a>
+          </li>
+          <li class="functions__shopping-cart" arial-label="Shopping Cart Icon">
+            <a href="" class="cart__icon"><i class="fa fa-shopping-cart"></i></a>
           </li>
         </ul>
       </div>
     </div>
-    <nav class="nav-bar" data-expand="false">
-      <div class="nav-bar__btn"></div>
+    <nav class="nav-bar">
+      <div class="nav-bar__outter-btn">
+        <div class="nav-bar__inner-btn"></div>
+      </div>
+      <div class="nav-bar__cover"></div>
+      <div class="nav-bar__sub-nav">
+        <div class="sub-nav__menu">
+          <h2>MENU</h2>
+          <div class="exit-menu-outter-btn">
+            <div class="exit-menu-inner-btn"></div>
+          </div>
+        </div>
+        <div class="sub-nav__item drop-down-game">
+          <span class="sub-nav__item-name"><span>Games</span><i class="fas fa-angle-down drop-down-toggle__indicator"></i></span>
+          <ul class="sub-nav__item-list">
+            <li><a href="/src/html/product-listing.html">View All Games</a></li>
+            <li><a href="">Board Games</a></li>
+            <li><a href="">Card Games</a></li>
+            <li><a href="">Dice Games</a></li>
+            <li><a href="">Role Playing Games</a></li>
+            <li><a href="">Editor's Choice</a></li>
+          </ul>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Puzzles</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Trending</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Best Sellers</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">New Arrivals</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Accessories</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Account</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">About us</span></a>
+        </div>
+        <div class="sub-nav__item drop-down-help">
+          <span class="sub-nav__item-name"><span>Help</span><i class="fas fa-angle-down drop-down-toggle__indicator"></i></span>
+          <ul class="sub-nav__item-list">
+            <li><a href="">Contact us</a></li>
+            <li><a href="">F&Q</a></li>
+            <li><a href="">Terms and conditions</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
@@ -46,11 +100,11 @@
         <div class="user-name">
           <div class="user-name__first">
             <label for="first-name">First Name *</label>
-            <input type="text" id="first-name" name="first-name">
+            <input type="text" id="first-name" name="first-name" required="required">
           </div>
           <div class="user-name__last">
             <label for="last-name">Last Name *</label>
-            <input type="text" id="last-name" name="last-name">
+            <input type="text" id="last-name" name="last-name" required="required">
           </div>
         </div>
         <div class="user-company">
@@ -63,27 +117,28 @@
           <div class="user-phone__detail">
             <fieldset class="phone-region__fieldset">
               <select name="phone-region" id="phone-region" class="phone-region-select">
+                <option value="" disabled selected>Choose</option>
                 <option value="usa">+123</option>
-              </select>
+              </select>  
             </fieldset>
             <input type="text" id="phone-number" class="phone-number-input" name="phone-number">
           </div>
         </div>
         <div class="user-email">
           <label for="email">Email *</label>
-          <input type="text" id="email" name="email">
+          <input type="text" id="email" name="email" required="required">
         </div>
         <div class="user-country-state">  
           <div class="user-country__detail">
             <label for="country">Country *</label>
-            <select name="country" id="country">
+            <select name="country" id="country" required="required">
               <option value="" disabled selected>Choose</option>
               <option value="usa">United State</option>
             </select>
           </div>
           <div class="user-state__detail">
             <label for="state">State *</label>
-            <select name="state" id="state">
+            <select name="state" id="state" required="required">
               <option value="" disabled selected>Choose</option>
               <option value="ca">CA</option>  
             </select>
@@ -92,14 +147,14 @@
         <div class="user-city-surburb">
           <div class="user-city__detail">
             <label for="city">City/Town *</label>
-            <select name="city" id="city">
+            <select name="city" id="city" required="required">
               <option value="" disabled selected>Choose</option>
               <option value="ir">Irvine</option>
             </select>
           </div>
           <div class="user-surburb__detail">
             <label for="surburb">Surburb *</label>
-            <select name="surburb" id="surburb">
+            <select name="surburb" id="surburb" required="required">
               <option value="" disabled selected>Choose</option>
               <option value="la palma">La Palma</option>
             </select>
@@ -107,12 +162,12 @@
         </div>
         <div class="user-street">
           <div class="user-street__name">
-            <label for="street-name">Street Name</label>
-            <input type="text" id="street-name">
+            <label for="street-name">Street Name *</label>
+            <input type="text" id="street-name" required="required">
           </div>
           <div class="user-street__num">
-            <label for="street-num">Street Number</label>
-            <input type="text" id="street-num">
+            <label for="street-num">Street Number *</label>
+            <input type="text" id="street-num" required="required">
           </div>
         </div>
         <div class="user-department">
@@ -125,18 +180,24 @@
       <form action="" class="shipping-form">
         <fieldset class="shipping-fieldset">
           <legend>Shipping Details:</legend>
-          <div class="shipping-info__free">
+          <div class="shipping-info__free shipping-delivery__selected">
             <input type="radio" id="free-shipping" name="shipping-method" checked>
             <div class="shipping-description">
               <label for="free-shipping">Free Shipping</label>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perspiciatis.</p>
+              <p><strong>Delivered:</strong>
+                <br>
+                Mon 30th May - Tue 31st May (Tracked 48)</p>
             </div>
           </div>
           <div class="shipping-info__express">
             <input type="radio" id="express-shipping" name="shipping-method">
             <div class="shipping-description">
               <label for="express-shipping">Express + $80.99</label>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perspiciatis.</p>
+              <p>
+                <strong>Delivered:</strong>
+                <br>
+                Get it Tomorrow, Sat 28th May! (Tracked 24)
+              </p>
             </div>
           </div>
         </fieldset>
@@ -154,12 +215,12 @@
           <h3>Price</h3>
         </div>
         <div class="detail__info">
-          <span>Product Name</span>
-          <span>$12.99</span>
+          <span>Cartographers</span>
+          <span>$8.29</span>
         </div>
         <div class="detail__info">
-          <span>Product Name</span>
-          <span>$12.99</span>
+          <span>Carnegie</span>
+          <span>$45.29</span>
         </div>
       </div>
       <div class="order-review__wrapup">
@@ -169,11 +230,11 @@
         </div>
         <div class="wrapup__total-price">
           <h3>TOTAL</h3>
-          <span>$25.98</span>
+          <span>$53.58</span>
         </div>
       </div>
     </section>
-    <button href="#" class="proceed-payment-btn" type="button">PAYMENT</button>
+    <a href="payment.html" class="proceed-payment-btn" role="button">PAYMENT</a>
   </main>
   <footer>
     <div class="subscription">
@@ -187,7 +248,7 @@
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>PRODUCTS</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Board games</a></li>
@@ -200,7 +261,7 @@
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>ACCOUNT</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Personal info</a></li>
@@ -210,7 +271,7 @@
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>ABOUT US</h2>
-          <span><i class="fas fa-angle-down"></i></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Contacts</a></li>
@@ -221,8 +282,8 @@
       </div>
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
-          <h2>HELP CENTER</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <h2>HELP</h2>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">F&Q</a></li>
@@ -235,5 +296,6 @@
   <script src="/src/scripts/header.js" defer></script>
   <script src="/src/scripts/footer.js" defer></script>
   <script src="/src/scripts/product-preview.js" defer></script>
+  <script src="/src/scripts/nav-bar-toggle.js" defer></script>
 </body>
 </html>

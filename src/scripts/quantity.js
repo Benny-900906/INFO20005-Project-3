@@ -27,4 +27,4 @@ increBtn.addEventListener("click", (e) => {
 
 addBtn.addEventListener("click", () => {
   document.querySelector(".cart__icon").classList.add("cart-occupied");
-})
+}) 

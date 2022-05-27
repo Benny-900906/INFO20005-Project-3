@@ -13,29 +13,84 @@
   <link rel="icon" href="/res/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/964b9be802.js" crossorigin="anonymous"></script>
 </head>  
-
 <body>
   <header>
     <div class="header-section">
       <div class="header-section__logo">
-        <img class="logo__img" src="/res/apple-touch-icon.png" alt="spelshop character as an icon">
+        <img class="logo__img" src="/res/apple-touch-icon.png" alt="iconic spelshop character">
         <h1 class="logo__title">Spelshop</h1>
+      </div>
+      <div class="header-section__search">
+        <input class="search__input" type="text" placeholder="Search ...">
+        <span class="search__icon"><i class="fa fa-search"></i></span>
       </div>
       <div class="header-section__tools">
         <ul class="tools__functions">
-          <li class="functions__search">
-            <a href="#" class="search__icon"><i class="fa fa-search"></i></a>
+          <li class="functions__search" arial-label="Search Icon">
+            <a href="" class="search__icon"><i class="fa fa-search"></i></a>
           </li>
-          <li class="functions__user">
-            <a href="#" class="user__icon"><i class="fa far fa-user"></i></a></li>
-          <li class="functions__shopping-cart">
-            <a href="#" class="cart__icon cart-occupied"><i class="fa fa-shopping-cart"></i></a>
+          <li class="functions__user" arial-label="User Icon">
+            <a href="" class="user__icon"><i class="fa far fa-user"></i></a>
+          </li>
+          <li class="functions__shopping-cart" arial-label="Shopping Cart Icon">
+            <a href="" class="cart__icon"><i class="fa fa-shopping-cart"></i></a>
           </li>
         </ul>
       </div>
     </div>
-    <nav class="nav-bar" data-expand="false">
-      <div class="nav-bar__btn"></div>
+    <nav class="nav-bar">
+      <div class="nav-bar__outter-btn">
+        <div class="nav-bar__inner-btn"></div>
+      </div>
+      <div class="nav-bar__cover"></div>
+      <div class="nav-bar__sub-nav">
+        <div class="sub-nav__menu">
+          <h2>MENU</h2>
+          <div class="exit-menu-outter-btn">
+            <div class="exit-menu-inner-btn"></div>
+          </div>
+        </div>
+        <div class="sub-nav__item drop-down-game">
+          <span class="sub-nav__item-name"><span>Games</span><i class="fas fa-angle-down drop-down-toggle__indicator"></i></span>
+          <ul class="sub-nav__item-list">
+            <li><a href="/src/html/product-listing.html">View All Games</a></li>
+            <li><a href="">Board Games</a></li>
+            <li><a href="">Card Games</a></li>
+            <li><a href="">Dice Games</a></li>
+            <li><a href="">Role Playing Games</a></li>
+            <li><a href="">Editor's Choice</a></li>
+          </ul>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Puzzles</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Trending</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Best Sellers</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">New Arrivals</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Accessories</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Account</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">About us</span></a>
+        </div>
+        <div class="sub-nav__item drop-down-help">
+          <span class="sub-nav__item-name"><span>Help</span><i class="fas fa-angle-down drop-down-toggle__indicator"></i></span>
+          <ul class="sub-nav__item-list">
+            <li><a href="">Contact us</a></li>
+            <li><a href="">F&Q</a></li>
+            <li><a href="">Terms and conditions</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
@@ -50,42 +105,47 @@
         <hr>
         <div class="order-summary__product">
           <div class="product__detail">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 50px">
-            <span>Before the earth</span>
+            <img src="/res/Screen Shot 2022-05-27 at 4.29.25 PM.png" alt="Cartographers">
+            <span>Cartographers</span>
           </div>
           <div class="product__price">
-            <span>$12.99</span>
+            <span>$8.29</span>
           </div>
           <div class="product__quantity">
-            <div class="quantity__control">
-              <button class="quantity__decrement-btn">-</button>
-              <span class="quantity__amount">1</span>
-              <button class="quantity__increment-btn">+</button>
+            <div class="quantity__wrap">
+              <div class="quantity__control">
+                <button class="quantity__decrement-btn">-</button>
+                <span class="quantity__amount">1</span>
+                <button class="quantity__increment-btn">+</button>
+              </div>
+              <a class="quantity__reset" href="">remove</a>
             </div>
-            <a class="quantity__reset" href="">remove</a>
           </div>
           <div class="product__total">
-            <span>$12.99</span>
+            <span>$8.29</span>
           </div>
         </div>
+        <hr class="product-separate">
         <div class="order-summary__product">
           <div class="product__detail">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 50px">
-            <span>Before the earth</span>
+            <img src="/res/Screen Shot 2022-05-24 at 4.31.40 AM.png" alt="Carnegie">
+            <span>Carnegie</span>
           </div>
           <div class="product__price">
-            <span>$12.99</span>
+            <span>$45.29</span>
           </div>
           <div class="product__quantity">
-            <div class="quantity__control">
-              <button class="quantity__decrement-btn">-</button>
-              <span class="quantity__amount">1</span>
-              <button class="quantity__increment-btn">+</button>
+            <div class="quantity__wrap">
+              <div class="quantity__control">
+                <button class="quantity__decrement-btn">-</button>
+                <span class="quantity__amount">1</span>
+                <button class="quantity__increment-btn">+</button>
+              </div>
+              <a class="quantity__reset" href="">remove</a>
             </div>
-            <a class="quantity__reset" href="">remove</a>
           </div>
           <div class="product__total">
-            <span>$12.99</span>
+            <span>$45.29</span>
           </div>
         </div>
       </div>
@@ -93,48 +153,81 @@
     </div>
     <div class="order-requirement">
       <h3 class="order-requirement__msg">Message</h3>
-      <textarea class="order-requirement__textarea" placeholder="Message or any special requirement(s)." rows="4" cols="5"></textarea>
+      <textarea class="order-requirement__textarea" placeholder="Message or any special requirement(s)"  rows="4" cols="5"></textarea>
     </div>
     <div class="order-finale">
       <h2 class="order-finale__total">CART TOTALS:</h2>
       <div class="order-finale__subtotal">
         <h3>Sub total:</h3>
-        <h3 class="subtotal__price">$41.98</h3>
+        <h3 class="subtotal__price">$53.58</h3>
       </div>
     </div>
     <div class="order-proceed">
-      <button class="order-proceed__continue-btn" type="button">CONTINUE SHOPPING</button>
-      <button class="order-proceed__checkout-btn" type="button">CHECKOUT</button>
+      <a href="index.html" role="button" class="order-proceed__continue-btn" type="button">CONTINUE SHOPPING</a>
+      <button type="button" class="order-proceed__checkout-btn">CHECKOUT</button>
+    </div>
+    <div class="dialog-cover content__hide"> 
+      <dialog class="auth-panel">
+        <div class="auth-header">
+          <div class="auth-header__selection auth-header__login auth-header__selected">
+            <h2>LOGIN</h2>
+          </div>
+          <div class="auth-header__selection auth-header__signup">
+            <h2>SIGN UP</h2>
+          </div>
+        </div>
+        <div class="auth-main">
+          <div class="auth-input__title">
+            <span>LOGIN</span>  
+            <div class="separator">
+              <hr>
+              <hr>
+            </div>
+          </div>
+          <form class="auth-main__credential">
+            <div class="credential__input">
+              <input class="credential__email" type="text" name="email-input" placeholder="Email Address">
+              <input class="credential__password" type="text" name="password-input" placeholder="Password">
+              <input class="credential__password-confirm content__hide" type="text" name="password-confirm" placeholder="Confirm Password">
+            </div>
+            <div class="credential__recover">
+              <span class="recover__password"><a href="">Forgot your password?</a></span>
+            </div>
+            <a href="/src/html/checkout.html" role="button" class="credential__verify">Sign In</a>
+          </form>
+          <a href="/src/html/checkout.html" role="button" class="guest-btn">Continue as guest</a>
+        </div>
+      </dialog>
     </div>
     <div class="order-recommendation">
       <h2>Recommended products:</h2>
       <ul class="order-recommendation__product-list">
         <li>
           <div class="product-list__item">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 40px">
+            <img src="/res/Screen Shot 2022-05-24 at 4.32.32 PM.png" alt="Falling Sky">
             <div class="item__meta">
-              <h3>Catastrophers</h3>
-              <span>$12.00</span>
+              <h3>Falling Sky</h3>
+              <span>$60.73</span>
             </div>
           </div>
           <button class="product-list__add-btn">ADD TO CART</button>
         </li>
         <li>
           <div class="product-list__item">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 40px">
+            <img src="/res/Screen Shot 2022-05-24 at 4.34.35 PM.png" alt="A Distant Plain">
             <div class="item__meta">
-              <h3>Catastrophers</h3>
-              <span>$12.00</span>
+              <h3>A Distant Plain</h3>
+              <span>$62.30</span>
             </div>
           </div>
           <button class="product-list__add-btn">ADD TO CART</button>
         </li>
         <li>
           <div class="product-list__item">
-            <img src="/res/jannis-lucas-v-QQ5EBf_bY-unsplash.jpg" alt="" style="width: 40px">
+            <img src="/res/Screen Shot 2022-05-24 at 4.38.17 AM.png" alt="Filler">
             <div class="item__meta">
-              <h3>Catastrophers</h3>
-              <span>$12.00</span>
+              <h3>Filler</h3>
+              <span>$11.79</span>
             </div>
           </div>
           <button class="product-list__add-btn">ADD TO CART</button>
@@ -154,7 +247,7 @@
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>PRODUCTS</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Board games</a></li>
@@ -167,7 +260,7 @@
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>ACCOUNT</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Personal info</a></li>
@@ -177,7 +270,7 @@
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>ABOUT US</h2>
-          <span><i class="fas fa-angle-down"></i></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Contacts</a></li>
@@ -188,8 +281,8 @@
       </div>
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
-          <h2>HELP CENTER</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <h2>HELP</h2>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">F&Q</a></li>
@@ -201,5 +294,8 @@
   <!-- scripts -->
   <script src="/src/scripts/header.js" defer></script>
   <script src="/src/scripts/footer.js" defer></script>
+  <script src="/src/scripts/auth-select.js" defer></script>
+  <script src="/src/scripts/nav-bar-toggle.js" defer></script>
+  <script src="/src/scripts/auth-validation.js"></script>
 </body>
 </html>

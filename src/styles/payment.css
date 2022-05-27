@@ -37,6 +37,7 @@ main input, main select {
 
 .payment h2 {
   align-self: flex-start;
+  font-size: 12px;
 }
 
 form {
@@ -46,8 +47,13 @@ form {
   gap: 1.5rem;
 }
 
+form label {
+  font-size: 10px;
+}
+
 form input {
   line-height: 1.8;
+  font-size: 10px;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
@@ -68,10 +74,62 @@ form input {
   width: 48%;
 }
 
-.payment__submit-btn {
-  padding: 0.5rem;
+.payment__paypal-btn {
+  /* padding: 0.8rem 0.5rem; */
   text-align: center;
   color: var(--text-ter-clr);
-  background-color: darkgreen;/* change later */
+  background-color: #ffcc30;/* change later */
   border-radius: 0.5rem;
+  font-size: 10px;
+  border: none;
+}
+
+.payment__paypal-btn:hover {
+  background-color: #f9c015;
+}
+
+.payment__paypal-btn img {
+  width: 60px;
+}
+
+.payment__submit-btn {
+  padding: 0.7rem 0.5rem;
+  text-align: center;
+  color: var(--text-ter-clr);
+  background-color: #25ae60;/* change later */
+  border-radius: 0.5rem;
+  font-size: 10px;
+  border: none;
+}
+
+.payment__submit-btn:hover {
+  background-color: #1e8a4d;
+}
+
+@media (min-width: 768px) {
+  .payment {
+    width: 65%;
+  }
+
+  .payment h2 {
+    font-size: 16px;
+  }
+
+  .payment__paypal-btn img {
+    width: 65px;
+  }
+
+  form label, form input {
+    font-size: 14px;
+  }
+  
+  .payment__submit-btn {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .payment {
+    width: 55%;
+  }
 }

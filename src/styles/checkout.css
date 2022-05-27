@@ -126,7 +126,12 @@ main input, main select {
 
 .shipping-info {
   width: 90%;
+  max-width: 450px;
+  align-self: flex-start;
+  margin-left: 5%;
 }
+
+/* let shipping info stick to the left */
 
 .shipping-fieldset {
   border: none;
@@ -145,12 +150,14 @@ main input, main select {
 .shipping-info__free, .shipping-info__express {
   width: 95%;
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 1.5rem;
   align-items: center;
   outline: 1px solid rgba(0,0,0,0.5);
   padding: 0.8rem 0.5rem;
   margin-top: 1rem;
+  cursor: pointer;
+
 }
 
 .shipping-description {
@@ -168,12 +175,15 @@ main input, main select {
   padding-inline: 1rem;
 }
 
+.shipping-delivery__selected {
+  background-color: #efefef;
+}
+
 .order-review {
   width: 100%;
   padding: 1.2rem;
   padding-right: 2.5rem;
-  /* outline: 2px solid black; */
-  background-color: var(--bg-ter-clr);
+  background-color: #fff8e0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -245,5 +255,134 @@ main input, main select {
   border-radius: 0.6rem;
   border: none;
   color: var(--text-ter-clr);
-  background-color: var(--bg-qui-clr);
+  background-color: #2c9cdb;
+  cursor: pointer;
+  text-align: center;
+}
+
+.proceed-payment-btn:hover {
+  background-color: #0d8ed9;
+}
+
+
+main label, main p {
+  font-size: 10px;
+}
+
+.order-review label, .order-review span, .order-review h3 {
+  font-size: 10px;
+}
+
+.proceed-payment-btn {
+  font-size: 10px;
+}
+
+main input, main select {
+  font-size: 10px;
+}
+
+.phone-region-select, .phone-number-input {
+  font-size: 10px;
+}
+
+.billing-info h2, .shipping-info legend, .order-review h2 {
+  font-size: 12px;
+}
+
+
+@media (min-width: 768px) {
+
+  main label, main p {
+    font-size: 14px;
+  }
+
+  .order-review label, .order-review span, .order-review h3 {
+    font-size: 14px;
+  }
+
+  .proceed-payment-btn {
+    font-size: 14px;
+  }
+
+  main input, main select {
+    font-size: 14px;
+  }
+
+  .user-phone__detail {
+    height: 1.7rem;
+  }
+
+  .phone-region-select, .phone-number-input {
+    font-size: 14px;
+  }
+
+  .billing-info h2, .shipping-info legend, .order-review h2 {
+    font-size: 16px;
+  }
+
+  .billing-info {
+    width: 65%;
+  }
+
+  .shipping-info {
+    width: 42%;
+    margin-left: 17.5%;
+  }
+
+  .shipping-info__free, .shipping-info__express {
+    gap: 1rem;
+  }
+
+  .order-review {
+    width: 40%;
+    max-width: 400px;
+    align-self: flex-end;
+    margin-right: 17.5%;
+  }
+
+  .order-review__wrapup {
+    width: 100%;
+    padding-left: 1.5rem;
+    /* outline: 1px solid black; */
+  }
+
+  .coupon-input {
+    width: 35%;
+  }
+
+  .proceed-payment-btn {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1020px) {
+  .billing-info {
+    width: 55%;
+  }
+
+  .shipping-info {
+    width: 30%;
+    margin-left: 22.5%;
+  }
+
+  .order-review {
+    width: 30%;
+    max-width: 400px;
+    align-self: flex-end;
+    margin-right: 22.5%;
+  }
+
+  .order-review__wrapup {
+    width: 100%;
+    padding-left: 1.5rem;
+    /* outline: 1px solid black; */
+  }
+
+  .coupon-input {
+    width: 35%;
+  }
+
+  .proceed-payment-btn {
+    width: 55%;
+  }
 }

@@ -12,144 +12,187 @@
   <link rel="stylesheet" href="/src/styles/index.css">
   <link rel="icon" href="/res/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/964b9be802.js" crossorigin="anonymous"></script>
-
-
 </head>  
-
 <body>
-
   <header>
     <div class="header-section">
       <div class="header-section__logo">
-        <img class="logo__img" src="/res/apple-touch-icon.png" alt="spelshop character as an icon">
+        <img class="logo__img" src="/res/apple-touch-icon.png" alt="iconic spelshop character">
         <h1 class="logo__title">Spelshop</h1>
       </div>
-  
+      <div class="header-section__search">
+        <input class="search__input" type="text" placeholder="Search ...">
+        <span class="search__icon"><i class="fa fa-search"></i></span>
+      </div>
       <div class="header-section__tools">
         <ul class="tools__functions">
-          <li class="functions__search">
-            <a href="#" class="search__icon"><i class="fa fa-search"></i></a>
+          <li class="functions__search" arial-label="Search Icon">
+            <a href="" class="search__icon"><i class="fa fa-search"></i></a>
           </li>
-          <li class="functions__user">
-            <a href="#" class="user__icon"><i class="fa far fa-user"></i></a></li>
-    
-          <li class="functions__shopping-cart">
-            <a href="#" class="cart__icon"><i class="fa fa-shopping-cart"></i></a>
+          <li class="functions__user" arial-label="User Icon">
+            <a href="" class="user__icon"><i class="fa far fa-user"></i></a>
+          </li>
+          <li class="functions__shopping-cart" arial-label="Shopping Cart Icon">
+            <a href="" class="cart__icon"><i class="fa fa-shopping-cart"></i></a>
           </li>
         </ul>
       </div>
     </div>
-
-    <nav class="nav-bar" data-expand="false">
-      <div class="nav-bar__btn"></div>
+    <nav class="nav-bar">
+      <div class="nav-bar__outter-btn">
+        <div class="nav-bar__inner-btn"></div>
+      </div>
+      <div class="nav-bar__cover"></div>
+      <div class="nav-bar__sub-nav">
+        <div class="sub-nav__menu">
+          <h2>MENU</h2>
+          <div class="exit-menu-outter-btn">
+            <div class="exit-menu-inner-btn"></div>
+          </div>
+        </div>
+        <div class="sub-nav__item drop-down-game">
+          <span class="sub-nav__item-name"><span>Games</span><i class="fas fa-angle-down drop-down-toggle__indicator"></i></span>
+          <ul class="sub-nav__item-list">
+            <li><a href="/src/html/product-listing.html">View All Games</a></li>
+            <li><a href="">Board Games</a></li>
+            <li><a href="">Card Games</a></li>
+            <li><a href="">Dice Games</a></li>
+            <li><a href="">Role Playing Games</a></li>
+            <li><a href="">Editor's Choice</a></li>
+          </ul>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Puzzles</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Trending</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Best Sellers</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">New Arrivals</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Accessories</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">Account</span></a>
+        </div>
+        <div class="sub-nav__item">
+          <a href=""><span class="sub-nav__item-name">About us</span></a>
+        </div>
+        <div class="sub-nav__item drop-down-help">
+          <span class="sub-nav__item-name"><span>Help</span><i class="fas fa-angle-down drop-down-toggle__indicator"></i></span>
+          <ul class="sub-nav__item-list">
+            <li><a href="">Contact us</a></li>
+            <li><a href="">F&Q</a></li>
+            <li><a href="">Terms and conditions</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-
-  
   <main>
     <div class="product-promotion">
       <div class="product-promotion__gallery">
-        <div class="gallery__img">
-          <img src="https://picsum.photos/300/200" alt="">
-        </div>
-        <div class="gallery__img">
-          <img src="https://picsum.photos/300/200" alt="">
-        </div>
-        <div class="gallery__img">
-          <img src="https://picsum.photos/300/200" alt="">
-        </div>
-        <div class="gallery__img">
-          <img src="https://picsum.photos/300/200" alt="">
-        </div>
-        <div class="gallery__img">
-          <img src="https://picsum.photos/300/200" alt="">
-        </div>
+        <div class="gallery__img slider-img-1" aria-label="promotion image #1"></div>
+        <div class="gallery__img slider-img-2" aria-label="promotion image #2"></div>
+        <div class="gallery__img slider-img-3" aria-label="promotion image #3"></div>
       </div>
+      <ul class="product-promotion__control" aria-label="Promotion Selection">
+        <li>
+          <button class="control__slide-btn" type="button" aria-controls="slide1" aria-label="Go to slide 1" data-selected="true" data-slide-order="'1'"></button>
+        </li>
+        <li>
+          <button class="control__slide-btn" type="button" aria-controls="slide2" aria-label="Go to slide 2" data-selected="false" data-slide-order="2"></button>
+        </li>
+        <li>
+          <button class="control__slide-btn" type="button" aria-controls="slide3" aria-label="Go to slide 3" data-selected="false" data-slide-order="3"></button>
+        </li>
+      </ul>
     </div>
-
-
-
     <section class="product-category">
       <h2>CATEGORY</h2>
       <div class="product-category__options">
         <div class="option__board-game">
-          <img src="/res/board-game.svg" alt="">
+          <img src="/res/board-game-category.png" alt="board game category">
           <p>Board game</p>
         </div>
         <div class="option__card-game">
-          <img src="/res/card-game.svg" alt="">
+          <img src="/res/card-game-category.png" alt="card game category">
           <p>Card game</p>
         </div>
+        <div class="option__puzzle">
+          <img src="/res/puzzle-category.png" alt="puzzle category">
+          <p>Puzzle</p>
+        </div>
         <div class="option__role-playing">
-          <img src="/res/rolle-player-game.svg" alt="">
+          <img src="/res/rpg-category.png" alt="rpg category">
           <p>RPG Game</p>
         </div>
-      </div>
+        <div class="option__editor-choice">
+          <img src="/res/editor-choice-category.png" alt="editor's choice category">
+          <p>Editor's Choice</p>
+        </div>
     </section>
-
-
-
     <section class="product-trend">
       <h2>TRENDING PRODUCTS</h2>
       <div class="product-trend__options">
         <div class="option__item">
-          <img src="https://picsum.photos/70/90" alt="">
+          <img src="/res/Screen Shot 2022-05-27 at 4.29.25 PM.png" alt="Cartographers">
           <p>CARTOGRAPHERS</p>
-          <p>$ 15.40</p>
-          <p>$ 22.00</p>
+          <p class="item__price-tag">$ 8.29</p>
           <button type="button">ADD TO CART</button>
         </div>
         <div class="option__item">
-          <img src="https://picsum.photos/70/90" alt="">
-          <p>BEFORE THE EARTH</p>
-          <p>$ 18.00</p>
-          <button type="button">ADD TO CART</button>
-        </div>
-        <div class="option__item">
-          <img src="https://picsum.photos/70/90" alt="">
+          <img src="/res/Screen Shot 2022-05-24 at 4.31.40 AM.png" alt="Before the earth">
           <p>CARNEGIE</p>
-          <p>$ 55.00</p>
+          <p class="item__price-tag">$ 45.29</p>
+          <button type="button">ADD TO CART</button>
+        </div>
+        <div class="option__item">
+          <img src="/res/Screen Shot 2022-05-24 at 4.38.17 AM.png" alt="Filler">
+          <p>FILLER</p>
+          <p class="item__price-tag">$ 11.79</p>
           <button type="button">ADD TO CART</button>
         </div>
       </div>
-      <a href="#"><button type="button">VIEW ALL</button></a>
+      <a href="product-listing.html" role="button" class="view-all-btn">VIEW ALL</a>
     </section>
-
     <section class="product-best-seller">
       <h2>BEST SELLERS</h2>
       <div class="product-best-seller__options">
         <div class="option__item">
-          <img src="https://picsum.photos/70/90" alt="">
-          <p>CARTOGRAPHERS</p>
-          <p>$ 15.40</p>
-          <p>$ 22.00</p>
+          <img src="/res/Screen Shot 2022-05-24 at 6.00.57 PM.png" alt="Pandameic: The Lab">
+          <p>PANDAMEIC: THE LAB</p>
+          <p class="item__price-tag">$ 30.99</p>
           <button type="button">ADD TO CART</button>
         </div>
         <div class="option__item">
-          <img src="https://picsum.photos/70/90" alt="">
-          <p>BEFORE THE EARTH</p>
-          <p>$ 18.00</p>
+          <img src="/res/Screen Shot 2022-05-24 at 6.09.10 PM.png" alt="Explore & Draw">
+          <p>EXPLORE & DRAW</p>
+          <p class="item__price-tag">$ 29.99</p>
           <button type="button">ADD TO CART</button>
         </div>
         <div class="option__item">
-          <img src="https://picsum.photos/70/90" alt="">
-          <p>CARNEGIE</p>
-          <p>$ 55.00</p>
+          <img src="/res/Screen Shot 2022-05-24 at 4.36.54 PM.png" alt="Pendragon">
+          <p>PENDRAGON</p>
+          <p class="item__price-tag">$ 49.99</p>
           <button type="button">ADD TO CART</button>
         </div>
       </div>
-      <a href="#"><button type="button">VIEW ALL</button></a>
-    </section>
-
-    
+      <a href="product-listing.html" role="button" class="view-all-btn">VIEW ALL</a>
+    </section>  
     <aside class="customer-review">
       <div class="customer-review__preview">
         <div class="preview__content">
           <h2>WHAT OUT CLIENTS SAY ABOUT US</h2>
-          <p><quote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusamus sapiente omnis, dolores veniam sed laboriosam quam explicabo cum illo, molestias culpa fugiat!"</quote></p>
-        </div>
+          <p><quote>"Spelshop are amazing! They offer friendly, efficient service, a very wide range of games and almost always the most competitive prices. They also deal with any issues quickly and fairly. I highly recommend that Spelshop are your first stop for all of your board game needs."</quote></p>
+          <p><quote>"These guys have the best selection at the best prices. Items always arrive quickly and with no damage. No need to shop around! Would totally recommend :)"</quote></p>
+        </div> 
         <div class="preview__link">
-          <a href="#">READ ALL REVIEWS</a>
+          <a href="">READ ALL REVIEWS</a>
         </div>
       </div>
       <div class="customer-review__input">
@@ -162,11 +205,7 @@
         </div> 
       </div>
     </aside>
-
   </main>
-
-
-
   <footer>
     <div class="subscription">
       <p>Subscribe to get our latest news and special offers !!!</p>
@@ -175,12 +214,11 @@
         <button type="button" class="content__btn">Subscribe</button>
       </div>
     </div>
-
     <div class="short-cut">
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>PRODUCTS</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Board games</a></li>
@@ -189,23 +227,21 @@
           <li><a href="" class="drop-down-links__option">Role-playing games</a></li>
           <li><a href="" class="drop-down-links__option">Editor's choice</a></li>
         </ul>
-        
       </div>
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>ACCOUNT</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Personal info</a></li>
           <li><a href="" class="drop-down-links__option">Orders</a></li>
         </ul>
       </div>
-
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
           <h2>ABOUT US</h2>
-          <span><i class="fas fa-angle-down"></i></i></span>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">Contacts</a></li>
@@ -214,11 +250,10 @@
           <li><a href="" class="drop-down-links__option">Customer care</a></li>
         </ul>
       </div>
-
       <div class="short-cut__category">
         <div class="category__drop-down-toggle">
-          <h2>HELP CENTER</h2>
-          <span><i class="fas fa-angle-down"></i></span>
+          <h2>HELP</h2>
+          <span class="drop-down-toggle__indicator"><i class="fas fa-angle-down"></i></span>
         </div>
         <ul class="category__drop-down-links" >
           <li><a href="" class="drop-down-links__option">F&Q</a></li>
@@ -230,5 +265,7 @@
   <!-- script -->
   <script src="/src/scripts/header.js" defer></script>
   <script src="/src/scripts/footer.js" defer></script>
+  <script src="/src/scripts/nav-bar-toggle.js" defer></script>
+  <script src="/src/scripts/promotion-slide.js" defer></script>
 </body>
 </html>

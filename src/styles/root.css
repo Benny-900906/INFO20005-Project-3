@@ -50,3 +50,12 @@
 input, select{
   outline: none;
 }
+
+button, a , select {
+  cursor: pointer;
+}
+
+::placeholder {
+  color: var(--text-pri-clr);
+  opacity: 0.5;
+}
