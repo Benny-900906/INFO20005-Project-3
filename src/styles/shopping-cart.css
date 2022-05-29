@@ -7,10 +7,6 @@ body {
   font-family: var(--content-font-family);
 }
 
-.body__static {
-  overflow: hidden;
-}
-
 main {
   display: flex;
   flex-direction: column;

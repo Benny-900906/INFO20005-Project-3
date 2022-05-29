@@ -70,12 +70,12 @@ main input, main select {
 }
 
 
-.order-detail-btn {
+.create-account-btn {
   background-color: #2c9cdb;
   color: var(--text-ter-clr);
 }
 
-.order-detail-btn:hover {
+.create-account-btn:hover {
   background-color: #0d8ed9;
 }
 
