@@ -41,7 +41,6 @@ main {
 
 .gallery__img {
   flex: none;
-  width: 100%;
   aspect-ratio: 3/1;
   /* aspect-ratio: 16/9; */
   object-fit: contain;
@@ -49,6 +48,8 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+  width: 0;
+  transition: all 250ms ease-in-out;
 }
 
 .slider-img-1 {
@@ -61,6 +62,10 @@ main {
 
 .slider-img-3 {
   background-image: url("https://www.board-game.co.uk/wp-content/uploads/2022/02/Outlet-Slider.jpg");
+}
+
+.selected-slider-img {
+  width: 100%;
 }
 
 
@@ -367,7 +372,6 @@ section {
 
 
 @media (min-width: 768px) {
-
 
   .gallery__img {
     aspect-ratio: 5/1;

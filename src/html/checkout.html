@@ -16,10 +16,10 @@
 <body>
   <header>
     <div class="header-section">
-      <div class="header-section__logo">
+      <a href="index.html" class="header-section__logo">
         <img class="logo__img" src="/res/apple-touch-icon.png" alt="iconic spelshop character">
         <h1 class="logo__title">Spelshop</h1>
-      </div>
+      </a>
       <div class="header-section__search">
         <input class="search__input" type="text" placeholder="Search ...">
         <span class="search__icon"><i class="fa fa-search"></i></span>
@@ -95,6 +95,9 @@
   </header>
   <main>
     <section class="billing-info">
+      <div class="billing-error">
+        <span>Please fill out all the <strong>required fields </strong> below</span>
+      </div>
       <h2>Billing Details:</h2>
       <form class="user-information" action="" method="POST">
         <div class="user-name">
@@ -118,7 +121,7 @@
             <fieldset class="phone-region__fieldset">
               <select name="phone-region" id="phone-region" class="phone-region-select">
                 <option value="" disabled selected>Choose</option>
-                <option value="usa">+123</option>
+                <option value="aus">+61</option>
               </select>  
             </fieldset>
             <input type="text" id="phone-number" class="phone-number-input" name="phone-number">
@@ -133,14 +136,14 @@
             <label for="country">Country *</label>
             <select name="country" id="country" required="required">
               <option value="" disabled selected>Choose</option>
-              <option value="usa">United State</option>
+              <option value="aus">Australia</option>
             </select>
           </div>
           <div class="user-state__detail">
             <label for="state">State *</label>
             <select name="state" id="state" required="required">
               <option value="" disabled selected>Choose</option>
-              <option value="ca">CA</option>  
+              <option value="vic">VIC</option>  
             </select>
           </div>
         </div>
@@ -149,14 +152,14 @@
             <label for="city">City/Town *</label>
             <select name="city" id="city" required="required">
               <option value="" disabled selected>Choose</option>
-              <option value="ir">Irvine</option>
+              <option value="melb">Melbourne</option>
             </select>
           </div>
           <div class="user-surburb__detail">
             <label for="surburb">Surburb *</label>
             <select name="surburb" id="surburb" required="required">
               <option value="" disabled selected>Choose</option>
-              <option value="la palma">La Palma</option>
+              <option value="carlton">Carlton</option>
             </select>
           </div>
         </div>
@@ -297,5 +300,6 @@
   <script src="/src/scripts/footer.js" defer></script>
   <script src="/src/scripts/product-preview.js" defer></script>
   <script src="/src/scripts/nav-bar-toggle.js" defer></script>
+  <script src="/src/scripts/checkout-validation.js"></script>
 </body>
 </html>

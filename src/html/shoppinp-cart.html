@@ -16,10 +16,10 @@
 <body>
   <header>
     <div class="header-section">
-      <div class="header-section__logo">
+      <a href="index.html" class="header-section__logo">
         <img class="logo__img" src="/res/apple-touch-icon.png" alt="iconic spelshop character">
         <h1 class="logo__title">Spelshop</h1>
-      </div>
+      </a>
       <div class="header-section__search">
         <input class="search__input" type="text" placeholder="Search ...">
         <span class="search__icon"><i class="fa fa-search"></i></span>
@@ -176,6 +176,23 @@
             <h2>SIGN UP</h2>
           </div>
         </div>
+
+        <div class="auth-error">
+          <ul class="error__list" role="alert">
+            <li class="error__email">
+              <span><strong>Email Address</strong> is a required field</span>
+            </li>
+            <li class="error__password">
+              <span><strong>Password</strong> is a required field</span>
+            </li>
+            <li class="error__password-confirm">
+              <span><strong>Confirm Password</strong> is a required field</span>
+            </li>
+            <li class="error__password-inconsistent">
+              <span><strong>Confirm Password</strong> should be the same as <strong>Password</strong></span>
+            </li>
+          </ul>
+        </div>
         <div class="auth-main">
           <div class="auth-input__title">
             <span>LOGIN</span>  
@@ -186,9 +203,9 @@
           </div>
           <form class="auth-main__credential">
             <div class="credential__input">
-              <input class="credential__email" type="text" name="email-input" placeholder="Email Address">
-              <input class="credential__password" type="text" name="password-input" placeholder="Password">
-              <input class="credential__password-confirm content__hide" type="text" name="password-confirm" placeholder="Confirm Password">
+              <input class="credential__email" type="text" name="email-input" placeholder="Email Address" required="required">
+              <input class="credential__password" type="password" name="password-input" placeholder="Password" required="required">
+              <input class="credential__password-confirm  content__hide" type="password" name="password-confirm" placeholder="Confirm Password" required="required">
             </div>
             <div class="credential__recover">
               <span class="recover__password"><a href="">Forgot your password?</a></span>

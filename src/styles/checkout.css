@@ -35,6 +35,25 @@ main input, main select {
   gap: 0.5rem;
 }
 
+.billing-error {
+  /* outline: 1px solid black; */
+  width: 100%;
+  background-color: #f2dedd;
+  padding: 1rem 1rem;
+  color: #e93d34;
+  align-items: center;
+  justify-content: flex-start;
+  display: none;
+}
+
+.billing-error--display {
+  display: flex;
+}
+
+.billing-error span {
+  font-size: 10px;
+}
+
 .billing-info h2 {
   align-self: flex-start;
 }
@@ -293,6 +312,10 @@ main input, main select {
 @media (min-width: 768px) {
 
   main label, main p {
+    font-size: 14px;
+  }
+
+  .billing-error span {
     font-size: 14px;
   }
 

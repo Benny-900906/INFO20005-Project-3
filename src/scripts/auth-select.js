@@ -3,9 +3,14 @@ const dialogCover = document.querySelector(".dialog-cover");
 const dialogPanel = document.querySelector(".auth-panel");
 const authOptions = document.querySelectorAll(".auth-header__selection");
 const credentialInputs = document.querySelectorAll(".credential__input input");
-const verifyBtn = document.querySelectorAll(".credential__verify");
+
 
 checkoutBtn.addEventListener("click", (e) => {
+  credentialInputs.forEach((input) => {
+    input.value = "";
+  });
+  document.querySelector(".auth-error").classList.remove("auth-error--display");
+
   if (e.target == checkoutBtn) {
     dialogCover.classList.remove("content__hide");
     dialogPanel.setAttribute("open", "");
@@ -27,6 +32,15 @@ authOptions.forEach((option) => {
   option.addEventListener("click", (e) => {
     document.querySelector(".auth-header__selected").classList.remove("auth-header__selected");
     e.target.classList.add("auth-header__selected");
+    credentialInputs.forEach((input) => {
+      input.value = "";
+    });
+    /* reset error messages */
+    document.querySelector(".auth-error").classList.remove("auth-error--display");
+    document.querySelectorAll(".auth-error li").forEach((err) => {
+      err.classList.remove("auth-error--display")
+    });
+
 
     if (e.target === document.querySelector(".auth-header__login")) {
       document.querySelector(".credential__password-confirm").classList.add("content__hide");

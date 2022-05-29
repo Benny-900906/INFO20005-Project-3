@@ -35,6 +35,25 @@ main input, main select {
   gap: 0.8rem;
 }
 
+.payment-error {
+  /* outline: 1px solid black; */
+  width: 100%;
+  background-color: #f2dedd;
+  padding: 1rem 1rem;
+  color: #e93d34;
+  align-items: center;
+  justify-content: flex-start;
+  display: none;
+}
+
+.payment-error--display {
+  display: flex;
+}
+
+.payment-error span {
+  font-size: 10px;
+}
+
 .payment h2 {
   align-self: flex-start;
   font-size: 12px;
@@ -109,6 +128,10 @@ form input {
 @media (min-width: 768px) {
   .payment {
     width: 65%;
+  }
+
+  .payment-error span {
+    font-size: 14px;
   }
 
   .payment h2 {
